@@ -15,6 +15,9 @@ function elementId(element){
 
 btn.addEventListener("click", function(){
    const inputValue= elementId("input")
+   if(isNaN(inputValue)){
+    return alert("give only num")
+}
     let newValue =(inputValue-((inputValue*30)/100));
     parag.innerText= newValue;
     return parag.innerText
@@ -23,6 +26,9 @@ btnn.addEventListener("click", function(){
     const inputValue= elementId("input-s")
     const discValue=document.getElementById("disk").value;
     document.getElementById("disk").value='';
+    if(isNaN(inputValue)){
+        return alert("give only num")
+    }
     if(discValue==="Disc 30%"){
      let newValue =(inputValue-((inputValue*30)/100));
      paragg.innerText= newValue;
