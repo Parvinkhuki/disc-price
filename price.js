@@ -22,10 +22,11 @@ btn.addEventListener("click", function(){
 btnn.addEventListener("click", function(){
     const inputValue= elementId("input-s")
     const discValue=document.getElementById("disk").value;
-    discValue="";
+    document.getElementById("disk").value='';
     if(discValue==="Disc 30%"){
      let newValue =(inputValue-((inputValue*30)/100));
      paragg.innerText= newValue;
+     
      return paragg.innerText;
     }
     else{
